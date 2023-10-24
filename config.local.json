@@ -1,0 +1,18 @@
+{
+    "kafka_bootstrap_servers": ["172.17.0.1:9092"],
+    "module_code": "det-asm-lstm",
+    "module_type": "detector",
+    "module_otype": "file",
+    "module_indir": "/var/csp/data/modules/det-asm-lstm/input",
+    "module_outdir": "",
+    "module_input_format": ["filepath", "filepath", "filepath"],
+    "module_output_format": "boolean",
+
+    "vocab_path": "/etc/csp/modules/det-asm-cnn/models/vocabulary_inv.json",
+    "sequence_length": 200,
+    "max_words": 1000,
+    "min_word_count": 1,
+    "context": 10,
+
+    "model_path": "/etc/csp/modules/det-asm-cnn/models/cnn_best__9635_1778.h5"
+}
